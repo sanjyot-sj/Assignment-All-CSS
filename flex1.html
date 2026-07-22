@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX1</title>
+
+    <style>
+        .container1{
+            width: 600px;
+            height: 600px;
+            background-color: aqua;
+            display: flex;
+           /* flex-direction: row;
+           /* gap:10px;/* space within 2 flexs */
+          /* align-items: center;*/
+          /* flex-wrap: wrap;*/
+        }   
+        .box{
+            /*height: 100px;
+            width: 100px;*/
+            color:blue;
+            border: 1px solid black;
+            flex: 10%;
+
+        }
+        .lenghtybox{
+           /* width: 400px;*/
+           /* flex-grow: inherit;*/
+           background-color:yellowgreen;
+        }
+
+        .box1
+        {
+            order: 1;
+        }
+        .box2{
+            order: 2;
+        }
+        .box3{
+            order: 3;
+        }
+        .box4{
+            order: 4;
+        }
+        .box5{
+            order: 5;
+        }
+        /* */ 
+        @media screen and  (max-width:400px)
+        { 
+            .container1
+            {
+                flex-direction: column; /* mobile view it make cars row to column*/
+            }
+
+            .box1
+        {
+            order: 1;
+        }
+        .box2{
+            order: 3;
+        }
+        .box3{
+            order: 2;
+        }
+        .box4{
+            order: 4;
+        }
+        .box5{
+            order: 5;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container1"> <!-- parent container-->
+        <div class="box box1">11 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquam.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, reprehenderit.</div>
+        <div class="box box2">22 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, natus. </div>
+        <div class=" box lenghtybox box3">33 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur officia eligendi, similique maxime quidem dolorum id autem doloribus, laudantium nihil repudiandae voluptas molestias harum accusamus, optio adipisci aspernatur velit ipsum.</div>
+        <div class="box box4">44 no data</div>
+        <div class="box box5">55 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, minus!</div>
+    </div>
+    
+</body>
+</html>
