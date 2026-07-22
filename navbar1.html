@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR_MYNTRA</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+       *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+       }
+      .Navbarmain{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        background-color:white;
+      }
+      .leftnavbar{
+        display: flex;
+        list-style-type: none;
+        border:1px solid black;
+      }
+      
+      .myntralogo{
+        border: 1px solid black;
+        height: 30px;
+        width: 30px;
+      }
+      .leftnavbarul{
+        list-style-type: none;
+      }
+      .leftnavlist{
+        display: inline-block;
+        margin-top:10px;
+      }
+      .leftnavname:link{
+        text-decoration: none;
+        color:black;
+        padding:20px;
+
+      }
+      .leftnavname:hover{
+        color:black;
+        border-bottom: 3px solid blue;
+      }
+      .leftnavname:active{
+        color:black;
+      }
+      .leftnavname:visited{
+        color:black;
+      }
+      /*Right Nav css is mentioned below*/
+
+      .rightnavbar{
+        display: flex;
+        border:1px solid black;
+      }
+      .rightnavbarul{
+        display: flex;
+      }
+      .profile,.wishlist,.bag{
+        list-style-type: none;
+        padding:10px;
+      }
+      .searchicon{
+        display: flex;
+        position: relative;
+        margin-top: 20px;
+       
+      }
+     
+      .searchicon input{
+        height:30px;
+        background-color: rgb(241, 239, 239);
+        border-radius: 15px;
+      }
+
+       .searchicon input:focus{
+        background-color: white;
+       }
+      .searchicon i{
+        color:red;
+        margin-left: 5px;
+      }
+      .profile,.wishlist,.bag{
+        color:black;
+      }
+      .profile,.wishlist,.bag:active{
+        color:black;
+      }
+      .profile,.wishlist,.bag:visited{
+        color:black;
+      }
+
+
+    </style>
+</head>
+<body>
+    <!-- For creating Myntra same Like Navbar we have to make 3 section-->
+    <!-- 1.Logo  2. Left Navbar  3. Right Navbar-->
+    
+    <nav class="Navbarmain">
+        <div class="leftnavbar">
+              <ul class="leftnavbarul">
+                <li class="leftnavlist"> <img src="./myntralogo.jfif" class="myntralogo leftnavname"> </li>
+                <li class="leftnavlist"> <a href="#" class="leftnavname">MEN</a> </li>
+                <li class="leftnavlist"> <a href="#" class="leftnavname">WOMEN</a> </li>
+                <li class="leftnavlist"> <a href="#" class="leftnavname">KIDS</a> </li>
+                <li class="leftnavlist"> <a href="#" class="leftnavname">HOME</a> </li>
+                <li class="leftnavlist"> <a href="#" class="leftnavname">BEAUTY</a> </li>
+                <li class="leftnavlist"> <a href="#" class="leftnavname">GENZ</a> </li>
+                <li class="leftnavlist"> <a href="#" class="leftnavname">STUDIO </a> <SUP style="color:red"> NEW</SUP></li> 
+            </ul>
+        </div>
+        <div class="rightnavbar">
+                <div class="searchicon">
+                  <i class="fa-brands fa-sistrix"></i>
+                  <input type=" text" placeholder="search for products and more" size="60">
+                </div>
+
+                <ul class="rightnavbarul">
+                    <li class="profile"> <a href="" class="profile"> <i class="fa-solid fa-user"></i>
+                    </br> PROFILE </a></li>
+                
+                    <li class="wishlist"> <a href="" class="wishlist"> <i class="fa-regular fa-heart"></i> 
+                    </br> WISHLIST </a> </li>
+               
+                    <li class="bag"> <a href="" class="bag"> <i class="fa-solid fa-bag-shopping"></i> 
+                    </br> BAG </a> </li>
+                </ul>
+            
+        </div>
+    </nav>
+    
+</body>
+</html>
