@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ton And Jerry</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: blue;
+            text-shadow: 5px 5px 5px aqua;
+        }
+        .info p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 500px;
+            margin: 50px auto;
+        }
+        img.mainimg{
+            width: 400px;
+            height:400px;
+            /*margin: 50px auto;  using this we can not make marging for imagee cause imagee is inline element
+              first we make the inline element to block elemet. then adjust the margines  
+            */
+            display: block;
+            margin: 50px auto;
+            border-radius: 20px;
+        }
+        img.mainimg:hover{
+            box-shadow: 8px 10px 5px red;
+        }
+        /*we can not make link tag center. so putted link tag in div tag. and applied css to it
+        */
+        div.clickme{
+            text-align: center;
+        }
+        /* now we will add css to anchor tag*/
+        a:link{
+            background-color: yellowgreen;
+            text-decoration: none;
+            font-size: 30px;
+            color:black;
+            padding:10px 30px;
+            border-radius: 10px;
+        }
+        a:hover{
+            text-decoration: underline;
+
+        }
+        a:active{
+
+        }
+        a:visited{
+            background-color: blueviolet;
+        }
+        .imagegallary{
+            background-color: rgb(226, 144, 44);
+            display: flex;
+       
+        }
+        .chracterscard{
+            width: 10rem; /* 1rem= 16pixcel*/
+            border:5px solid green; 
+            
+        }
+        .chracterscard img{
+            width:100%; /* as per parent tag character cards width*/
+            height:15rem;
+        }
+        .chracterscard h3{
+            text-align: center;
+        }
+        .chracterscard p{
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1><i>Tom & Jerry</i></h1>
+
+    <p class="info">
+        Tom and Jerry, American animated cartoon series about a hapless cat’s never-ending pursuit of a
+         clever mouse.
+         Tom and Jerry is an iconic American animated media franchise centered on the endless, slapstick 
+         rivalry between a hapless house cat named Tom and a clever mouse named Jerry. Created in 1940 by 
+         animators William Hanna and Joseph Barbera for Metro-Goldwyn-Mayer (MGM), the series is celebrated 
+         for its visual humor and classic chases
+    </p>
+    <img src="./tomandjerry.jfif" class="mainimg">
+    <br>
+    <br>
+     <div class="clickme">
+     <a href="https://en.wikipedia.org/wiki/Tom_and_Jerry" target="_blank"> Click me for more info </a>
+     </div>
+
+     <h2> Characters in Tom and Jerry</h2>
+     <br>
+     <section class="imagegallary">
+        <div class="chracterscard">
+            <img src="./tom_galore.jfif">
+            <h3> Galore</h3>
+            <p> Toms Girlfriend</p>
+        </div>
+        <div class="chracterscard">
+            <img src="./tom_butch.jfif">
+            <h3> Butch</h3>
+            <p> Toms Dushman</p>
+        </div>
+        <div class="chracterscard">
+            <img src="./tom_quaker.jfif">
+            <h3> Quaker</h3>
+            <p> Jerrys Friedn</p>
+        </div>
+        <div class="chracterscard">
+            <img src="./tom_spike.jfif">
+            <h3> Spike</h3>
+            <p> Toms Dog Friend</p>
+        </div>
+        <div class="chracterscard">
+            <img src="./tom_tuffy.jfif">  
+            <h3> Tuffy</h3>
+            <p> Jerrys Cute litte Friend</p>
+        </div>
+     </section>
+</body>
+</html>
