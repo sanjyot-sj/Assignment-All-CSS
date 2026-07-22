@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* all the main container we did 600 x 600. main container has 3 row and 3 col.*/
+        .GridContainer{
+            width: 600px; 
+            height:600px;
+            background-color: pink;
+            display: grid;
+            
+           /* grid-template-columns: 1fr 1fr 1fr; /* created 3 colums */
+            /*grid-template-rows: 1fr 1fr 1fr;  /* created 3 rows */
+            /* means created 3 x 3 matrix */
+        }
+        
+        
+        .grape{
+            height: 100px;
+            width: 150px;
+            background-color: blueviolet;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start:1 ;
+            grid-column-end:2 ;
+        }
+        .strabery{
+            height: 100px;
+            width: 150px;
+            background-color: red;
+            grid-column-start:2 ;
+            grid-column-end:3 ;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .watermelon{
+            height: 400px;
+            width: 300px;
+            background-color: rgb(131, 51, 51);
+            grid-column-start:3 ;
+            grid-column-end:4 ;
+            grid-row-start: 1;
+            grid-row-end: 3
+        }
+        .orange{
+            height: 300px;
+            width:300px;
+            background-color: orange;
+            grid-column-start:1 ;
+            grid-column-end:3 ;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            
+        }
+        .papaya{
+            height:200px;
+            width:300px;
+            background-color: yellow;
+            grid-column-start:1 ;
+            grid-column-end:3 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .pinaple{
+            height:200px;
+            width:300px;
+            background-color: green;
+            grid-column-start:3 ;
+            grid-column-end:4 ;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+
+
+<body>
+    
+    <div class="GridContainer">
+        <div class="box grape"> <img src="./css images/grapes.jfif" class="box grape"></div>
+        <div class="box strabery"><img src="./css images/strabery.jfif" class="box strabery"></div>
+        <div class="box watermelon"> <img src="./css images/watermelon.jfif" class="box watermelon"> </div>
+        <div class="box orange"><img src="./css images/orange.jfif"  class="box orange"></div>
+        <div class="box papaya"> <img src="./css images/papaya.jfif" class="box papaya"></div>
+        <div class="box pinaple"> <img src="./css images/pinaple.jfif" class="box pinaple"></div>
+
+    </div>
+</body>
+</html>
