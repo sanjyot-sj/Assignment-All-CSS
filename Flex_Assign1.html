@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            height: 100px;
+            width: 900px;
+            background-color: darkblue;
+            border: 1px solid yellow;
+            display: flex;
+            justify-content: center; /* makes outer container horizontally center*/
+            align-items: center;  /* makes outer container vertically center*/
+            color:white;
+        }
+        .outercont{
+            height: 60%;
+            width:95%;
+            border: 4px solid green;
+            display: flex; 
+        }
+        
+        .cont1_box{
+            background-color: rgba(66, 66, 243, 0.932);
+            height: 100%;
+            width:180px;
+            border: 2px solid red;
+            align-content: center; /* text or content within box makes verticall (ubha) center*/
+            text-indent: 10px;
+        }
+        .cont2_box{
+            background-color: rgba(66, 66, 243, 0.932);
+            border: 2px solid red;
+            flex:30%;
+            align-content: center; /* text or content within box makes verticall (ubha) center*/
+            text-indent: 10px;
+        }
+        
+        .cont3_box{
+             background-color: rgba(66, 66, 243, 0.932);
+            flex:25%;
+            align-content: center; /* text or content within box makes verticall (ubha) center*/
+            text-indent: 10px;
+        }
+        .cont3_last_box{
+            flex:50%;
+            background-color: greenyellow;
+            align-content: center; /* text or content within box makes verticall (ubha) center*/
+            text-indent: 10px;            
+        }
+        .outercont4{
+            height: 60%;
+            width:95%;
+            border: 4px solid green;
+            display: flex; 
+        }
+        .cont4_1_box{
+            height: 100%;
+             background-color: rgba(66, 66, 243, 0.932);
+              align-content: center; /* text or content within box makes verticall (ubha) center*/
+              flex:15%;
+              text-indent: 10px;   
+        }
+        .cont4_2_box{
+            height: 100%;
+             background-color: rgba(66, 66, 243, 0.932);
+              align-content: center; /* text or content within box makes verticall (ubha) center*/
+              text-indent: 10px;   
+        }
+        .cont4_3_box{
+            height: 100%;
+            background-color: greenyellow;
+             align-content: center; /* text or content within box makes verticall (ubha) center*/
+            flex:15%;
+            text-indent: 10px;   
+        }
+    </style>
+</head>
+<body>
+        <!-- First container from assignment of flex-->
+        <div class="container">
+            <div class="outercont">
+                <div class="cont1_box">
+                CHILD
+            </div>
+            <div class="cont1_box">
+               This is some longer
+            </div>
+            <div class="cont1_box">
+               CHILD 
+            </div>
+            </div>
+        </div>
+        <!-- Second container from assignment of flex-->
+        <div class="container">
+             <div class="outercont">
+                <div class="cont2_box">
+                    CHILD
+                </div>
+                <div class="cont2_box">
+                CHILD
+                </div>
+                <div class="cont2_box">
+                CHILD 
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="outercont">
+                <div class="cont3_box">
+                    CHILD
+                </div>
+                <div class="cont3_box">
+                CHILD
+                </div>
+                <div class="cont3_last_box">
+                CHILD 
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="outercont4">
+                <div class="cont4_1_box">
+                CHILD
+            </div>
+            <div class="cont4_2_box">
+               Now this is lot of content thet should not fit here and we should be wary about it.
+            </div>
+            <div class="cont4_3_box">
+               CHILD 
+            </div>
+            </div>
+
+        </div>
+        <div class="container5">
+
+        </div>
+        <div class="container6">
+
+        </div>
+        <div class="container7">
+
+        </div>
+        <div class="container8">
+
+        </div>
+    
+</body>
+</html>
